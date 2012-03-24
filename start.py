@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from inches import *
 from feet import *
 print 'Welcome to Python Unit converter!'
