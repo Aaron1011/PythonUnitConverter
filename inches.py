@@ -20,7 +20,7 @@ def inches_miles(n):
         print str(n) + ' inches = ' + str(a) + ' miles.'
 
 def inch():
-        a = input('How many inches would you like to convert: ')
+        a = input('How many inches would you like to convert? ')
         b = raw_input('What would you like to convert to? [F]eet, [Y]ards, [M]iles: ')
         if b == 'F' or b == 'f':
             inches_feet(a)
