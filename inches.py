@@ -5,16 +5,19 @@ def inches_feet(n):
     else:
         print str(n) + ' inches = ' + str(a) + ' feet.'
 
-def inches_yards(n)
+def inches_yards(n):
     a = n / 36
     if a == 1:
         print str(n) + ' inches = ' + str(a) + ' yard.'
     else:
         print str(n) + ' inches = ' + str(a) + ' yards.'
 
-
-
-
+def inches_miles(n):
+    a = n / 63360
+    if a == 1:
+        print str(n) + ' inches = ' + str(a) + ' mile.'
+    else:
+        print str(n) + ' inches = ' + str(a) + ' miles.'
 
 def inch():
         a = input('How many inches would you like to convert: ')
