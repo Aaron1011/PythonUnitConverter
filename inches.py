@@ -5,7 +5,7 @@ def inches_feet(n):
     else:
         print str(n) + ' inches = ' + str(a) + ' feet.'
 
-def inches():
+def inch():
         a = input('How many inches would you like to convert: ')
         b = raw_input('What would you like to convert to? [F]eet, [Y]ards, [M]iles: ')
         if b == 'F' or b == 'f':
