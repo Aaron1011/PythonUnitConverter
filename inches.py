@@ -26,3 +26,5 @@ def inch():
             inches_feet(a)
         elif b == 'Y' or b == 'y':
             inches_yards(a)
+        elif b == 'M' or b == 'm':
+            inches_miles(a)
