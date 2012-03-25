@@ -22,7 +22,7 @@ def inches_miles(n):
 
 def inch():
     try:
-        a = int(raw_input('How many inches would you like to convert? '))
+        a = float(raw_input('How many inches would you like to convert? '))
     except ValueError:
         print 'You need to enter a number!'
         inch()

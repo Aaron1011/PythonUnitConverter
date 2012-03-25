@@ -1,6 +1,6 @@
 def feet_inches(n):
-    b = int(n) * 12
-    if  int(n) == 1:
+    b = float(n) * 12
+    if  float(n) == 1:
         print str(n) + ' feet = ' + str(b) + ' inch.'
         quit()
     else:
@@ -9,7 +9,7 @@ def feet_inches(n):
 
 def foot():
     try:
-        a = int(raw_input('How many feet would you like to convert? '))
+        a = float(raw_input('How many feet would you like to convert? '))
     except ValueError:
         print 'You need to enter a number!'
         foot()
