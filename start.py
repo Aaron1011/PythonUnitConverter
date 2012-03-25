@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from inches import *
 from feet import *
+from yards import *
 print 'Welcome to Python Unit converter!'
 
 def __init__():
@@ -8,7 +9,9 @@ def __init__():
     if c == 'i' or c == 'I':
         inch()
     elif c == 'F' or c == 'f':
-        foot() 
+        foot()
+    elif c == 'Y' or c == 'y':
+        yard() 
     else:
         print 'That conversion is not available yet.'
         __init__()
