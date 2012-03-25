@@ -15,6 +15,15 @@ def feet_yards(n):
     else:
         print str(n) + ' feet = ' + str(b) + ' yard.'
 
+def feet_miles(n):
+    b = float(n) / 5280
+    if  float(n) == 1:
+        print str(n) + ' foot = ' + str(b) + ' mile(s).'
+        quit()
+    else:
+        print str(n) + ' feet = ' + str(b) + ' mile(s).'
+        quit()
+
 def foot():
     try:
         a = float(raw_input('How many feet would you like to convert? '))
@@ -26,3 +35,5 @@ def foot():
         feet_inches(a)
     if b == 'Y' or b == 'y':
         feet_yards(a)
+    if b == 'M' or b == 'm':
+        feet_miles(a)
