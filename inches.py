@@ -2,9 +2,10 @@ def inches_feet(n):
     a = n / float(12)
     if a == 1:
         print str(n) + ' inches = ' + str(a) + ' foot.'
+        quit()
     else:
         print str(n) + ' inches = ' + str(a) + ' feet.'
-
+        quit()
 def inches_yards(n):
     a = n / float(36)
     if a == 1:
@@ -20,11 +21,15 @@ def inches_miles(n):
         print str(n) + ' inches = ' + str(a) + ' miles.'
 
 def inch():
-        a = input('How many inches would you like to convert? ')
-        b = raw_input('What would you like to convert to? [F]eet, [Y]ards, [M]iles: ')
-        if b == 'F' or b == 'f':
-            inches_feet(a)
-        elif b == 'Y' or b == 'y':
-            inches_yards(a)
-        elif b == 'M' or b == 'm':
-            inches_miles(a)
+    try:
+        a = int(raw_input('How many inches would you like to convert? '))
+    except ValueError:
+        print 'You need to enter a number!'
+        inch()
+    b = raw_input('What would you like to convert to? [F]eet, [Y]ards, [M]iles: ')    
+    if b == 'F' or b == 'f':
+        inches_feet(a)
+    elif b == 'Y' or b == 'y':
+        inches_yards(a)
+    elif b == 'M' or b == 'm':
+        inches_miles(a)
