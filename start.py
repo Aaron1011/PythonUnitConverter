@@ -10,6 +10,7 @@ def __init__():
     elif c == 'F' or c == 'f':
         foot() 
     else:
-        print 'Goodbye!'
+        print 'That conversion is not available yet.'
+        __init__()
 if __name__ == '__main__':
     __init__()
