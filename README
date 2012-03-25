@@ -1,1 +1,1 @@
-The goal of this project is to create an easy-to-use unit converter program written in Python. Currently, only conversions of English lengths are available (i.e., conversion between inches, feet, yards, and miles).
+The goal of this project is to create an easy-to-use unit converter program written in Python. Currently, only conversions of English lengths are available (i.e., conversion between inches, feet, yards, and miles). Soon, I will add conversion functions for conversion within metric units of length, and between metric and English units of length.
