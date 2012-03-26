@@ -8,18 +8,10 @@ def yards_inches(n):
 
 def yards_feet(n):
     a = n * 3
-    if n == 1:
+    if n == 1
         print str(n) + ' yard = ' + str(a) + ' feet.'
     else:
         print str(n) + ' yards = ' + str(a) + ' feet.'
-
-def yards_miles(n):
-    a = float(n) / 1760
-    if n == 1:
-        print str(n) + ' yard = ' + str(a) + ' mile(s).'
-    else:
-        print str(n) + ' yards = ' + str(a) + ' mile(s).'
-
 def yard():
     try:
         a = float(raw_input('How many yards would you like to convert? '))
@@ -31,7 +23,5 @@ def yard():
         yards_inches(a)
     elif b == 'F' or b == 'f':
         yards_feet(a)
-    elif b == 'M' or b == 'm':
-        yards_miles(a)
     else:
-        print b + ' is not a valid choice. You need to enter I, F, or M!.'
+        print 'That conversion is not available yet.'
