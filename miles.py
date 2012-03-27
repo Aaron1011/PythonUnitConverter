@@ -7,6 +7,15 @@ def miles_inches(n):
         print str(n) + ' miles = ' + str(b) + ' inch(es).'
         quit()
 
+def miles_feet(n):
+    b = n * 5280
+    if  n == 1:
+        print str(n) + ' mile = ' + str(b) + ' feet.'
+        quit()
+    else:
+        print str(n) + ' miles = ' + str(b) + ' feet.'
+        quit()
+
 def mile():
     try:
         a = float(raw_input('How many miles would you like to convert? '))
