@@ -2,6 +2,7 @@
 from inches import *
 from feet import *
 from yards import *
+from miles import *
 print 'Welcome to Python Unit converter!'
 
 def __init__():
@@ -12,8 +13,10 @@ def __init__():
         foot()
     elif c == 'Y' or c == 'y':
         yard() 
+    elif c == 'M' or c == 'm':
+        mile()
     else:
-        print 'That conversion is not available yet.'
+        print 'That is not a unit!'
         __init__()
 if __name__ == '__main__':
     __init__()
