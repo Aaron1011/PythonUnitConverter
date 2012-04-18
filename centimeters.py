@@ -14,6 +14,13 @@ def centimeters_decimeters(n):
     else:
         print str(n) + ' centimeters = ' + str(b) + ' decimeter(s).'
 
+def centimeters_meters(n):
+    b = float(n) / 100
+    if float(n) == 1:
+        print str(n) + ' centimeter = ' + str(b) + ' meter(s).'
+    else:
+        print str(n) + ' centimeters = ' + str(b) + ' meter(s).'
+
 def centimeter():
     try:
         a = float(raw_input('How many centimeters would you like to convert? '))
@@ -25,5 +32,5 @@ def centimeter():
         centimeters_millimeters(a)
     if b == 'D' or b == 'd':
         centimeters_decimeters(a)
-    if b == 'M' or b == 'm':
-        quit()
+    if b == 'Me' or b == 'me' or b == 'mE':
+        centimeters_meters(a)
