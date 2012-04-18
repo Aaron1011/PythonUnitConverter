@@ -20,6 +20,12 @@ def centimeters_meters(n):
         print str(n) + ' centimeter = ' + str(b) + ' meter(s).'
     else:
         print str(n) + ' centimeters = ' + str(b) + ' meter(s).'
+def centimeters_kilometers(n):
+    b = float(n) / 1000
+    if float(n) == 1:
+        print str(n) + ' centimeter = ' + str(b) + ' kilometer(s).'
+    else:
+        print str(n) + ' centimeters = ' + str(b) + ' kilometer(s).'
 
 def centimeter():
     try:
@@ -34,3 +40,5 @@ def centimeter():
         centimeters_decimeters(a)
     if b == 'Me' or b == 'me' or b == 'mE':
         centimeters_meters(a)
+    if b == 'K' or b == 'k':
+        centimeters_kilometers(a)
