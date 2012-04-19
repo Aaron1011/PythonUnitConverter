@@ -26,6 +26,15 @@ def decimeters_meters(n):
         print str(n) + ' decimeters = ' + str(b) + ' meter(s)'
         quit()
 
+def decimeters_kilometers(n):
+    b = float(n) / 100
+    if  float(n) == 1:
+        print str(n) + ' decimeter = ' + str(b) + ' kilometer(s).'
+        quit()
+    else:
+        print str(n) + ' decimeters = ' + str(b) + ' kilometer(s)'
+        quit()
+
 def decimeter():
     try:
         a = float(raw_input('How many decimeters would you like to convert? '))
@@ -38,6 +47,6 @@ def decimeter():
     if b == 'C' or b == 'c':
         decimeters_centimeters(a)
     if b == 'K' or b == 'k':
-        quit()
+        decimeters_kilometers(a)
     if b == 'Me' or b == 'me':
         decimeters_meters(a)
