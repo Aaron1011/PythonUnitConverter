@@ -25,6 +25,15 @@ def millimeters_meters(n):
         print str(n) + ' millimeters = ' + str(b) + ' meter(s).'
         quit()
 
+def millimeters_kilometers(n):
+    b = float(n) / 10000
+    if  float(n) == 1:
+        print str(n) + ' millimeter = ' + str(b) + ' kilometer(s).'
+        quit()
+    else:
+        print str(n) + ' millimeters = ' + str(b) + ' kilometer(s).'
+        quit()
+
 
 def millimeter():
     try:
@@ -40,4 +49,5 @@ def millimeter():
     if b == 'M' or b == 'm':
         millimeters_meters(a)
     if b == 'K' or b == 'k':
-        quit()
+        millimeters_kilometers(a)
+        
