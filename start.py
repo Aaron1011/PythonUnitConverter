@@ -4,6 +4,7 @@ from feet import *
 from yards import *
 from miles import *
 from centimeters import *
+from decimeters import *
 print 'Welcome to Python Unit converter!'
 print 'Currently, only units of length can be converted.'
 def __init__():
@@ -39,8 +40,8 @@ def __metric__():
         centimeter()
     #elif c == 'M' or c == 'm':
         #millimeter()
-    #elif c == 'D' or c == 'd':
-        #decimeter()
+    elif c == 'D' or c == 'd':
+        decimeter()
     #elif c == 'Me' or c == 'me':
         #meter()
     #elif c == 'K' or c == 'k':
