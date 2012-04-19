@@ -16,6 +16,15 @@ def millimeters_decimeters(n):
         print str(n) + ' millimeters = ' + str(b) + ' deciimeter(s).'
         quit()
 
+def millimeters_meters(n):
+    b = float(n) / 1000
+    if  float(n) == 1:
+        print str(n) + ' millimeter = ' + str(b) + ' meter(s).'
+        quit()
+    else:
+        print str(n) + ' millimeters = ' + str(b) + ' meter(s).'
+        quit()
+
 
 def millimeter():
     try:
@@ -29,6 +38,6 @@ def millimeter():
     if b == 'D' or b == 'd':
        millimeters_decimeters(a)
     if b == 'M' or b == 'm':
-        quit()
+        millimeters_meters(a)
     if b == 'K' or b == 'k':
         quit()
