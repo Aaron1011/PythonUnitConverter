@@ -7,6 +7,15 @@ def meters_millimeters(n):
         print str(n) + ' meters = ' + str(b) + ' millimeter(s)'
         quit()
 
+def meters_centimeters(n):
+    b = float(n) * 100
+    if  float(n) == 1:
+        print str(n) + ' meter = ' + str(b) + ' centimeter(s).'
+        quit()
+    else:
+        print str(n) + ' meters = ' + str(b) + ' centimeter(s)'
+        quit()
+
 def meter():
     try:
         a = float(raw_input('How many meters would you like to convert? '))
@@ -16,5 +25,7 @@ def meter():
     b = raw_input('What you you like to convert to? [M]illimeters, [C]entimeters, [D]ecimeters, [K]ilometers: ')
     if b == 'M' or b == 'm':
         meters_millimeters(a)
+    elif b == 'C' or b == 'c':
+        meters_centimeters(a)
     else:
         print 'That unit is not available yet!'
