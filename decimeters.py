@@ -12,7 +12,7 @@ def decimeter():
         a = float(raw_input('How many decimeters would you like to convert? '))
     except ValueError:
         print 'You need to enter a number!'
-        foot()
+        decimeter()
     b = raw_input('What you you like to convert to? [C]entimeters, [M]eters, [K]ilometers: ')
     if b == 'C' or b == 'c':
         decimeters_centimeters(a)
