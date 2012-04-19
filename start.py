@@ -5,6 +5,7 @@ from yards import *
 from miles import *
 from centimeters import *
 from decimeters import *
+from millimeters import *
 print 'Welcome to Python Unit converter!'
 print 'Currently, only units of length can be converted.'
 def __init__():
@@ -35,11 +36,11 @@ def __english__():
 
 
 def __metric__():
-    c = raw_input('Choose the unit you would to convert: [M]ilimeter, [C]entimeters, [D]ecimeters, [Me]ter, [K]ilometer: ')
+    c = raw_input('Choose the unit you would to convert: [M]ilimeters, [C]entimeters, [D]ecimeters, [Me]ter, [K]ilometer: ')
     if c == 'c' or c == 'C':
         centimeter()
-    #elif c == 'M' or c == 'm':
-        #millimeter()
+    elif c == 'M' or c == 'm':
+        millimeter()
     elif c == 'D' or c == 'd':
         decimeter()
     #elif c == 'Me' or c == 'me':
