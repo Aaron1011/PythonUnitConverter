@@ -25,6 +25,15 @@ def meters_decimeters(n):
         print str(n) + ' meters = ' + str(b) + ' decimeter(s)'
         quit()
 
+def meters_kilometers(n):
+    b = float(n) / 1000
+    if  float(n) == 1:
+        print str(n) + ' meter = ' + str(b) + 'kilometer(s).'
+        quit()
+    else:
+        print str(n) + ' meters = ' + str(b) + ' kilometer(s)'
+        quit()
+
 def meter():
     try:
         a = float(raw_input('How many meters would you like to convert? '))
@@ -38,5 +47,7 @@ def meter():
         meters_centimeters(a)
     elif b == 'D' or b == 'd':
         meters_decimeters(a)
+    elif b == 'K' or b == 'k':
+        meters_kilometers(a)
     else:
-        print 'That unit is not available yet!'
+        print 'That unit is not available!'
