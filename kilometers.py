@@ -25,6 +25,16 @@ def kilometers_decimeters(n):
         print str(n) + ' kilometers = ' + str(b) + ' decimeter(s).'
         quit()
 
+def kilometers_meters(n):
+    b = float(n) * 1000
+    if  float(n) == 1:
+        print str(n) + ' kilometer = ' + str(b) + ' meter(s).'
+        quit()
+    else:
+        print str(n) + ' kilometers = ' + str(b) + ' meter(s).'
+        quit()
+
+
 def kilometer():
     try:
         a = float(raw_input('How many kilometers would you like to convert? '))
@@ -38,7 +48,7 @@ def kilometer():
         kilometers_centimeters(a)
     elif b == 'D' or b == 'd':
         kilometers_decimeters(a)
-    #if b == 'Me' or b == 'me' or b == 'mE':
-    #    kilometers_meters(a)
+    elif b == 'Me' or b == 'me' or b == 'mE':
+        kilometers_meters(a)
     #if b == 'K' or b == 'k':
     #   
