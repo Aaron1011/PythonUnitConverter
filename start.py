@@ -7,6 +7,7 @@ from centimeters import *
 from decimeters import *
 from millimeters import *
 from meters import *
+from kilometers import *
 print 'Welcome to Python Unit converter!'
 print 'Currently, only units of length can be converted.'
 def __init__():
@@ -46,10 +47,10 @@ def __metric__():
         decimeter()
     elif c == 'Me' or c == 'me':
         meter()
-    #elif c == 'K' or c == 'k':
-        #kilometer()
+    elif c == 'K' or c == 'k':
+        kilometer()
     else:
-        print 'That unit is not available yet!'
+        print 'That unit is not available!'
         __metric__()
 
 
