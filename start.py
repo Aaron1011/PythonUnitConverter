@@ -1,13 +1,5 @@
 #!/usr/bin/env python
-from inches import *
-from feet import *
-from yards import *
-from miles import *
-from centimeters import *
-from decimeters import *
-from millimeters import *
-from meters import *
-from kilometers import *
+from imports import *
 print 'Welcome to Python Unit converter!'
 print 'Currently, only units of length can be converted.'
 def __init__():
