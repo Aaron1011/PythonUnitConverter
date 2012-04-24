@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 from imports import *
+import platform
 print 'Welcome to Python Unit converter!'
+if platform.architecture()[0] == '64bit':
+    print "Congratulations! You're using a 64-bit OS!" 
 print 'Currently, only units of length can be converted.'
 def __init__():
     a = raw_input('What measurement system would you like to convert?\n[E]nglish to english, [M]etric to metric, or [B]oth: ')
