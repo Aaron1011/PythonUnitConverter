@@ -7,13 +7,27 @@ if platform.architecture()[0] == '64bit':
 print 'Currently, only units of length can be converted.'
 def __init__():
     a = raw_input('What measurement system would you like to convert?\n[E]nglish to english, [M]etric to metric, or [B]oth: ')
-    if a == 'E' or a == 'e':
-        __english__()
-    elif a == 'M' or a == 'm':
-        __metric__()
+    if platform.system() == 'Windows':
+    
+        if a == 'E' or a == 'e':
+            __english__()
+            raw_input('Please press enter to exit: ')
+        elif a == 'M' or a == 'm':
+            __metric__()
+            raw_input('Please press enter to exit: ')
+        else:
+            print 'Sorry! That is not available yet!'
+            __init__()
     else:
-         print 'Sorry! That is not available yet!'
-         __init__()
+        if a == 'E' or a == 'e':
+            __english__()
+            
+        elif a == 'M' or a == 'm':
+            __metric__()
+            
+        else:
+            print 'Sorry! That is not available yet!'
+            __init__()
 
 
 def __english__():

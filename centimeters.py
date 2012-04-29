@@ -2,10 +2,10 @@ def centimeters_millimeters(n):
     b = float(n) * 10
     if  float(n) == 1:
         print str(n) + ' centimeter = ' + str(b) + ' millimeter(s).'
-        quit()
+         
     else:
         print str(n) + ' centimeters = ' + str(b) + ' millimeter(s).'
-        quit()
+         
 
 def centimeters_decimeters(n):
     b = float(n) / 10
@@ -42,3 +42,4 @@ def centimeter():
         centimeters_meters(a)
     if b == 'K' or b == 'k':
         centimeters_kilometers(a)
+            
