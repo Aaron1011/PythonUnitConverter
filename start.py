@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from imports import *
+from modules import *
 import platform
 print 'Welcome to Python Unit converter!'
 if platform.architecture()[0] == '64bit':
