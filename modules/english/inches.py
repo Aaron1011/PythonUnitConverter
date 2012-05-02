@@ -1,6 +1,6 @@
 def inches_feet(n):
     a = n / float(12)
-    if a == 1:
+    if n == 1:
         print str(n) + ' inch = ' + str(a) + ' feet.'
         quit()
     else:
@@ -8,14 +8,14 @@ def inches_feet(n):
         quit()
 def inches_yards(n):
     a = n / float(36)
-    if a == 1:
-        print str(n) + ' inche = ' + str(a) + ' yard(s).'
+    if n == 1:
+        print str(n) + ' inchn = ' + str(a) + ' yard(s).'
     else:
         print str(n) + ' inches = ' + str(a) + ' yard(s).'
 
 def inches_miles(n):
     a = n / float(63360)
-    if a == 1:
+    if n == 1:
         print str(n) + ' inch = ' + str(a) + ' mile(s).'
     else:
         print str(n) + ' inch = ' + str(a) + ' mile(s).'
