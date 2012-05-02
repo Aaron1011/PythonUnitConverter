@@ -15,9 +15,9 @@ def __init__():
         elif a == 'M' or a == 'm':
             __metric__()
             raw_input('Please press enter to exit: ')
-        else:
-            print 'Sorry! That is not available yet!'
-            __init__()
+        elif a == 'B' or a == 'b':
+            __both__()
+            raw_input('Please press enter to exit: ')
     else:
         if a == 'E' or a == 'e':
             __english__()
@@ -25,9 +25,8 @@ def __init__():
         elif a == 'M' or a == 'm':
             __metric__()
             
-        else:
-            print 'Sorry! That is not available yet!'
-            __init__()
+        elif a == 'B' or a == 'b':
+            __both__()
 
 
 def __english__():
@@ -61,6 +60,21 @@ def __metric__():
     else:
         print 'That unit is not available!'
         __metric__()
+
+def both_english():
+    c = raw_input('Choose the unit you would to convert: [I]nches, [F]eet, [Y]ards, [M]iles ')
+    if c == 'I' or c == 'i':
+        both_inch()
+    else:
+        print 'That unit is not available yet!'
+
+def __both__():
+    
+    c1 = raw_input('Would you like to convert [E]nglish to Metric, or [M]etric to English? ')
+    if c1 == 'E' or c1 =='e':
+        both_english()
+    elif c1 == 'M' or c1 == 'm':
+        both_metric()
 
 
 if __name__ == '__main__':
