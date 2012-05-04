@@ -1,3 +1,5 @@
-The goal of this project is to create an easy-to-use unit converter program written in Python. Currently, only conversions of English and Metric lengths are availabl. I am working on adding the cpability to convert between English and Metric units.
+The goal of this project is to create an easy-to-use unit converter program written in Python. Currently, only conversions of English and Metric lengths are available. I am working on adding the capability to convert between English and Metric units.
+
+The file units.py is an API which allows you to integrate unit conversion functionality into your own application.
 
 To run the program, simply execute the file 'start.py' with Python and follow the prompts.
