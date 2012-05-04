@@ -18,4 +18,14 @@ class UnitConverter():
     def convert(self, unit1, unit2, q):
         a = getattr(modules, unit1 + '_' + unit2)
         return a(q, api=True)
-    
+    # The 'exists' method takes two arguments: the name of the unit to be
+    # converted, and the name of the unit to be converted to. If Python
+    # Unit Converter has the hapability, it returns True. Otherwise, it returns
+    # False.
+    def exists(self, unit1, unit2):
+        try:
+            getattr(modules, unit1 + '_' + unit2)
+        except AttributeError:
+            return False
+        else:
+            return True
