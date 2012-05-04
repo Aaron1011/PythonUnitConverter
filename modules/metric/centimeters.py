@@ -1,5 +1,7 @@
-def centimeters_millimeters(n):
+def centimeters_millimeters(n, api=False):
     b = float(n) * 10
+    if api == True:
+        return b
     if  float(n) == 1:
         print str(n) + ' centimeter = ' + str(b) + ' millimeter(s).'
          
@@ -7,21 +9,27 @@ def centimeters_millimeters(n):
         print str(n) + ' centimeters = ' + str(b) + ' millimeter(s).'
          
 
-def centimeters_decimeters(n):
+def centimeters_decimeters(n, api=False):
     b = float(n) / 10
+    if api == True:
+        return b
     if float(n) == 1:
         print str(n) + ' centimeter = ' + str(b) + ' decimeter(s).'
     else:
         print str(n) + ' centimeters = ' + str(b) + ' decimeter(s).'
 
-def centimeters_meters(n):
+def centimeters_meters(n, api=False):
     b = float(n) / 100
+    if api == True:
+        return b
     if float(n) == 1:
         print str(n) + ' centimeter = ' + str(b) + ' meter(s).'
     else:
         print str(n) + ' centimeters = ' + str(b) + ' meter(s).'
-def centimeters_kilometers(n):
+def centimeters_kilometers(n, api=False):
     b = float(n) / 1000
+    if api == True:
+        return b
     if float(n) == 1:
         print str(n) + ' centimeter = ' + str(b) + ' kilometer(s).'
     else:

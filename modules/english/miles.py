@@ -1,29 +1,35 @@
-def miles_inches(n):
+def miles_inches(n, api=False):
+    if api==True:
+        return b
     b = n * 63360
     if  n == 1:
         print str(n) + ' mile = ' + str(b) + ' inch(es).'
-        quit()
+        
     else:
         print str(n) + ' miles = ' + str(b) + ' inch(es).'
-        quit()
+        
 
-def miles_feet(n):
+def miles_feet(n, api=False):
     b = n * 5280
+    if api==True:
+        return b
     if  n == 1:
         print str(n) + ' mile = ' + str(b) + ' feet.'
-        quit()
+        
     else:
         print str(n) + ' miles = ' + str(b) + ' feet.'
-        quit()
+        
 
-def miles_yards(n):
+def miles_yards(n, api=False):
     b = n * 1760
+    if api==True:
+        return b
     if  n == 1:
         print str(n) + ' mile = ' + str(b) + ' yard(s).'
-        quit()
+        
     else:
         print str(n) + ' miles = ' + str(b) + ' yard(s).'
-        quit() 
+         
 
 def mile():
     try:

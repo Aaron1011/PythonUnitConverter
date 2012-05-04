@@ -1,5 +1,7 @@
-def meters_millimeters(n):
+def meters_millimeters(n, api=False):
     b = float(n) * 1000
+    if api == True:
+        return b
     if  float(n) == 1:
         print str(n) + ' meter = ' + str(b) + ' millimeter(s).'
         quit()
@@ -7,8 +9,10 @@ def meters_millimeters(n):
         print str(n) + ' meters = ' + str(b) + ' millimeter(s)'
         quit()
 
-def meters_centimeters(n):
+def meters_centimeters(n, api=False):
     b = float(n) * 100
+    if api == True:
+        return b
     if  float(n) == 1:
         print str(n) + ' meter = ' + str(b) + ' centimeter(s).'
         quit()
@@ -16,8 +20,10 @@ def meters_centimeters(n):
         print str(n) + ' meters = ' + str(b) + ' centimeter(s)'
         quit()
 
-def meters_decimeters(n):
+def meters_decimeters(n, api=False):
     b = float(n) * 10
+    if api == True:
+        return b
     if  float(n) == 1:
         print str(n) + ' meter = ' + str(b) + 'decimeter(s).'
         quit()
@@ -25,8 +31,10 @@ def meters_decimeters(n):
         print str(n) + ' meters = ' + str(b) + ' decimeter(s)'
         quit()
 
-def meters_kilometers(n):
+def meters_kilometers(n, api=False):
     b = float(n) / 1000
+    if api == True:
+        return b
     if  float(n) == 1:
         print str(n) + ' meter = ' + str(b) + 'kilometer(s).'
         quit()

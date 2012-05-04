@@ -1,28 +1,34 @@
-def feet_inches(n):
+def feet_inches(n, api=False):
     b = float(n) * 12
+    if api==True:
+        return b
     if  float(n) == 1:
         print str(n) + ' foot = ' + str(b) + ' inch(es).'
-        quit()
+        
     else:
         print str(n) + ' feet = ' + str(b) + ' inch(es).'
-        quit()
+        
 
-def feet_yards(n):
+def feet_yards(n, api=False):
     b = float(n) * 12
+    if api == True:
+        return b
     if  float(n)  == 1:
         print str(n) + ' foot = ' + str(b) + ' yard(s).'
-        quit()
+        
     else:
         print str(n) + ' feet = ' + str(b) + ' yard(s).'
 
-def feet_miles(n):
+def feet_miles(n, api=False):
     b = float(n) / 5280
+    if api==True:
+        return b
     if  float(n) == 1:
         print str(n) + ' foot = ' + str(b) + ' mile(s).'
-        quit()
+        
     else:
         print str(n) + ' feet = ' + str(b) + ' mile(s).'
-        quit()
+        
 
 def foot():
     try:

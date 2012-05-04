@@ -1,5 +1,7 @@
-def kilometers_millimeters(n):
+def kilometers_millimeters(n, api=False):
     b = float(n) * 1000000
+    if api == True:
+        return b
     if  float(n) == 1:
         print str(n) + ' kilometer = ' + str(b) + ' millimeter(s).'
         quit()
@@ -7,8 +9,10 @@ def kilometers_millimeters(n):
         print str(n) + ' kilometers = ' + str(b) + ' millimeter(s).'
         quit()
 
-def kilometers_centimeters(n):
+def kilometers_centimeters(n, api=False):
     b = float(n) * 100000
+    if api == True:
+        return b
     if  float(n) == 1:
         print str(n) + ' kilometer = ' + str(b) + ' centimeter(s).'
         quit()
@@ -16,8 +20,10 @@ def kilometers_centimeters(n):
         print str(n) + ' kilometers = ' + str(b) + ' centimeter(s).'
         quit()
 
-def kilometers_decimeters(n):
+def kilometers_decimeters(n, api=False):
     b = float(n) * 10000
+    if api == True:
+        return b
     if  float(n) == 1:
         print str(n) + ' kilometer = ' + str(b) + ' decimeter(s).'
         quit()
@@ -25,8 +31,10 @@ def kilometers_decimeters(n):
         print str(n) + ' kilometers = ' + str(b) + ' decimeter(s).'
         quit()
 
-def kilometers_meters(n):
+def kilometers_meters(n, api=False):
     b = float(n) * 1000
+    if api == True:
+        return b
     if  float(n) == 1:
         print str(n) + ' kilometer = ' + str(b) + ' meter(s).'
         quit()
@@ -50,5 +58,3 @@ def kilometer():
         kilometers_decimeters(a)
     elif b == 'Me' or b == 'me' or b == 'mE':
         kilometers_meters(a)
-    #if b == 'K' or b == 'k':
-    #   

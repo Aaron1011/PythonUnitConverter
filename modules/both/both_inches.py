@@ -1,19 +1,25 @@
-def inches_millimeters(n):
+def inches_millimeters(n, api=False):
     a = n * 25.4
+    if api == True:
+        return b
     if n == 1:
         print str(n) + ' inch = ' + str(a) + ' centimeters.'
     else:
         print str(n) + ' inches = ' + str(a) + ' centimeters.'
 
-def inches_centimeters(n):
+def inches_centimeters(n, api=False):
     a = n * 2.54
+    if api == True:
+        return b
     if n == 1:
         print str(n) + ' inch = ' + str(a) +  ' centimeters.'
     else:
         print str(n) + ' inches = ' + str(a) +  ' centimeters.'
 
-def inches_decimeters(n):
+def inches_decimeters(n, api=False):
     a = n * 0.254
+    if api == True:
+        return b
     if n == 1:
         print str(n) + ' inch = ' + str(a) +  ' deciimeters.'
     else:

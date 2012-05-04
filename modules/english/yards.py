@@ -1,20 +1,26 @@
-def yards_inches(n):
+def yards_inches(n, api=False):
     a = n * 36
+    if api==True:
+        return b
     if n == 1:
         print str(n) + ' yard = ' + str(a) + ' inch(es).'
-        quit()
+        
     else:
         print str(n) + ' yards = ' + str(a) + ' inch(es).'
 
-def yards_feet(n):
+def yards_feet(n, api=False):
     a = n * 3
+    if api==True:
+        return b
     if n == 1:
         print str(n) + ' yard = ' + str(a) + ' feet.'
     else:
         print str(n) + ' yards = ' + str(a) + ' feet.'
 
-def yards_miles(n):
+def yards_miles(n, api=False):
     a = float(n) / 1760
+    if api==True:
+        return b
     if n == 1:
         print str(n) + ' yard = ' + str(a) + ' mile(s).'
     else:
