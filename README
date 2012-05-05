@@ -2,4 +2,4 @@ The goal of this project is to create an easy-to-use unit converter program writ
 
 The file units.py is an API which allows you to integrate unit conversion functionality into your own application.
 
-To run the program, simply execute the file 'start.py' with Python and follow the prompts.
+To run the program, simply execute the file 'start.py' with Python and follow the prompts to convert units of measurement.
