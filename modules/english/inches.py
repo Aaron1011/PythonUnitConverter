@@ -7,6 +7,7 @@ def inches_feet(n, api=False):
         
     else:
         print str(n) + ' inches = ' + str(a) + ' feet.'
+    inch() #Returns control to inch module
         
 def inches_yards(n, api=False):
     a = n / float(36)
@@ -16,6 +17,7 @@ def inches_yards(n, api=False):
         print str(n) + ' inchn = ' + str(a) + ' yard(s).'
     else:
         print str(n) + ' inches = ' + str(a) + ' yard(s).'
+    inch() #Returns control to inch module
 
 def inches_miles(n, api=False):
     a = n / float(63360)
@@ -25,6 +27,7 @@ def inches_miles(n, api=False):
         print str(n) + ' inch = ' + str(a) + ' mile(s).'
     else:
         print str(n) + ' inch = ' + str(a) + ' mile(s).'
+    inch() #Returns control to inch module
 
 def inch():
     try:

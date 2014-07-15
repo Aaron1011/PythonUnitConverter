@@ -21,9 +21,27 @@ def inches_decimeters(n, api=False):
     if api == True:
         return b
     if n == 1:
-        print str(n) + ' inch = ' + str(a) +  ' deciimeters.'
+        print str(n) + ' inch = ' + str(a) +  ' decimeters.'
     else:
         print str(n) + ' inches = ' + str(a) +  ' decimeters.'
+        
+def inches_meters(n, api=False):
+    a = n * 0.0254
+    if api == True:
+        return b
+    if n == 1:
+        print str(n) + ' inch = ' + str(a) + ' meters.'
+    else:
+        print str(n) + ' inches = ' + str(a) + ' meters.'
+        
+def inches_kilometers(n, api=False):
+    a = n * 0.0000254
+    if api == True:
+        return b
+    if n == 1:
+        print str(n) + ' inch = ' + str(a) + ' kilometers.'
+    else:
+        print str(n) + ' inches = ' + str(a) + ' kilometers.'
 
 def both_inch():
     try:
@@ -38,6 +56,10 @@ def both_inch():
         inches_centimeters(a)
     elif b == 'D' or b == 'd':
         inches_decimeters(a)
+    elif b == 'me' or b == 'Me':
+        inches_meters(a)
+    elif b == 'k' or b == 'K':
+        inches_kilometers(a)
     else:
         print 'That unit is not available yet!'
         both_inch()

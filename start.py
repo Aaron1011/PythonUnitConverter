@@ -1,10 +1,12 @@
 #!/usr/bin/env python
+
 from modules import *
 import platform
 print 'Welcome to Python Unit converter!'
 if platform.architecture()[0] == '64bit':
     print "Congratulations! You're using a 64-bit OS!" 
 print 'Currently, only units of length can be converted.'
+
 def __init__():
     a = raw_input('What measurement system would you like to convert?\n[E]nglish to english, [M]etric to metric, or [B]oth: ')
     if platform.system() == 'Windows':
@@ -28,9 +30,12 @@ def __init__():
         elif a == 'B' or a == 'b':
             __both__()
 
+        else:
+            print("Please enter a valid option \n\n")
+            __init__()
 
 def __english__():
-    c = raw_input('Choose the unit you would to convert: [I]nches, [F]eet, [Y]ards, [M]iles ')
+    c = raw_input('Choose the unit you would like to convert: [I]nches, [F]eet, [Y]ards, [M]iles ')
     if c == 'i' or c == 'I':
         inch()
     elif c == 'F' or c == 'f':
@@ -46,7 +51,7 @@ def __english__():
 
 
 def __metric__():
-    c = raw_input('Choose the unit you would to convert: [M]ilimeters, [C]entimeters, [D]ecimeters, [Me]ter, [K]ilometer: ')
+    c = raw_input('Choose the unit you would like to convert: [M]ilimeters, [C]entimeters, [D]ecimeters, [Me]ter, [K]ilometer: ')
     if c == 'c' or c == 'C':
         centimeter()
     elif c == 'M' or c == 'm':
@@ -62,11 +67,16 @@ def __metric__():
         __metric__()
 
 def both_english():
-    c = raw_input('Choose the unit you would to convert: [I]nches, [F]eet, [Y]ards, [M]iles ')
+    c = raw_input('Choose the unit you would like to convert: [I]nches, [F]eet, [Y]ards, [M]iles ')
     if c == 'I' or c == 'i':
         both_inch()
+    if c == 'f' or c == 'F':
+        pass#both_feet()
     else:
         print 'That unit is not available yet!'
+
+def both_metric():
+    print 'That unit is not available yet!'
 
 def __both__():
     
