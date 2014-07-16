@@ -3,9 +3,9 @@ def inches_millimeters(n, api=False):
     if api == True:
         return b
     if n == 1:
-        print str(n) + ' inch = ' + str(a) + ' centimeters.'
+        print str(n) + ' inch = ' + str(a) + ' millimeters.'
     else:
-        print str(n) + ' inches = ' + str(a) + ' centimeters.'
+        print str(n) + ' inches = ' + str(a) + ' millimeters.'
 
 def inches_centimeters(n, api=False):
     a = n * 2.54
@@ -61,5 +61,5 @@ def both_inch():
     elif b == 'k' or b == 'K':
         inches_kilometers(a)
     else:
-        print 'That unit is not available yet!'
+        #print 'That unit is not available yet!'
         both_inch()

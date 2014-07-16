@@ -71,12 +71,33 @@ def both_english():
     if c == 'I' or c == 'i':
         both_inch()
     if c == 'f' or c == 'F':
-        pass#both_feet()
+        pass #both_feet()
     else:
         print 'That unit is not available yet!'
 
 def both_metric():
-    print 'That unit is not available yet!'
+    #print 'That unit is not available yet!'
+
+    c2 = raw_input('Choose the unit you would like to convert: [M]illimeters, [C]entimeters, [D]ecimeters, [Me]ters, [K]ilometers ')
+    if c2 == 'M' or 'm':
+        both_millimeter()
+
+    elif c2 == 'C' or c2 == 'c':
+        both_centimeter()
+
+    elif c2 == 'D' or c2 == 'd':
+        both_decimeter()
+
+    elif c2 == 'Me' or c2 == 'me':
+        both_meter()
+
+    elif c2 == 'K' or c2 == 'k':
+        both_kilometers()
+
+    else:
+        print 'Please enter a valid option\n\n'
+        both_metric()
+
 
 def __both__():
     
