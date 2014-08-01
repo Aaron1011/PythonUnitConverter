@@ -1,4 +1,2 @@
-"""both kilometers module"""
-
 def both_kilometer():
-    print 'Kilometers module'
+    print 'Kilometers module not available yet'
