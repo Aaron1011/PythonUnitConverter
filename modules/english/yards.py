@@ -41,3 +41,4 @@ def yard():
         yards_miles(a)
     else:
         print b + ' is not a valid choice. You need to enter I, F, or M!.'
+        yard()

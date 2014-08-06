@@ -1,7 +1,6 @@
 """
 Metric to English Conversions module.
 These are conversions of Millimeters to either Feet, Yards or Miles
-
 """
 def millimeters_feet(n, api=False):
 	a = n * 0.0032808	
